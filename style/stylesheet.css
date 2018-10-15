@@ -99,10 +99,13 @@ font-size: 1.8em;
 
 /* ----- project pictures -----*/
 
+.header-picture {
+    width: 100%;
+}
+
 .project-presentation {
     width: 85%;
     margin: 0 auto;
-
 }
 
 figure {
