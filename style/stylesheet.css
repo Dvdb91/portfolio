@@ -42,6 +42,22 @@ font-size: 1.8em;
 
 /* ----- navigation -----*/
 
+#container {
+    opacity: 1;
+
+}
+
+.fading {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+    0% {opacity: 1;}
+    50% {opacity: 0.5;}
+    100% {opacity: 0;} 
+ } 
+
 .container-project-title-presentation {
     height: 100vh;
     width: 100%;
