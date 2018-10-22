@@ -14,11 +14,11 @@
 
 .navigation {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding-top: 50px;
-    padding-left: 30px;
+    justify-content: space-between;
+    width: 95%;
+    align-items: center;
     height: 14%;
+    margin: 0 auto;
 }
 
 .subtitle {
@@ -71,6 +71,7 @@
     justify-content: space-between;
     width: 95%;
     margin: 0 auto;
+    padding-top: 2.5em;
 }
 
 
@@ -92,9 +93,13 @@
     color: black;
 }
 
-.list-project-titles a:hover {
+.lists a:hover {
     text-decoration: line-through;
-    color: black;
+}
+
+.lists a:active,
+.lists a:focus {
+    color: #A8CCE5;
 }
 
 #second-screensize {
@@ -106,6 +111,10 @@
 }
 
 #fourth-screensize {
+    display: none;
+}
+
+#fifth-screensize {
     display: none;
 }
 
@@ -126,6 +135,10 @@
     #fourth-screensize {
         display: none;
     }
+
+    #fifth-screensize {
+        display: none;
+    }
 }
 
 @media (max-width: 900px ) {
@@ -144,6 +157,10 @@
     }
 
     #fourth-screensize {
+        display: none;
+    }
+
+    #fifth-screensize {
         display: none;
     }
 }
@@ -177,5 +194,56 @@
 
     #fourth-screensize {
         display: flex;
+    }
+
+    #fifth-screensize {
+        display: none;
+    }
+}
+
+@media (max-width: 400px ) {
+
+    .navigation {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .lists li {
+        font-size: 0.7em;        
+    }
+
+    .footer-main-text-container {
+        height: 60%;
+    }
+
+    .footer-project-titles-container {
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .footer-main-text {
+        font-size: 2em;
+    }
+    
+    #first-screensize {
+        display: none;
+    }
+
+    #second-screensize {
+        display: none;
+    }
+
+    #third-screensize {
+        display: none;
+    }
+
+    #fourth-screensize {
+        display: flex;
+    }
+    
+    #fifth-screensize {
+        display: none;
     }
 }
