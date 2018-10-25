@@ -13,8 +13,8 @@ body {
 .fonts-title {
 font-family: 'Lato', sans-serif;
 font-weight: 900;
-line-height: 1.6;
-font-size: 0.9em;
+line-height: 1;
+font-size: 0.8em;
 }
 
 .fonts-title-olivia {
@@ -28,12 +28,12 @@ font-size: 13px;
 .fonts-text {
 font-family: 'EB Garamond', serif;
 font-weight: 900;
-font-size: 1.8em;
+font-size: 1.2em;
 }
 
 .fonts-caption {
     font-family: 'Lato', sans-serif;
-    font-weight: 900;
+    font-weight: bold;
     line-height: 1.6;
     word-spacing: 0.1em;
     font-size: 13px;
@@ -45,7 +45,13 @@ font-size: 1.8em;
 #container {
     position: absolute;
     background-color: white;
+    height: 130vh;
+    width: 100%;
   
+}
+
+.wrapper {
+    padding-top: 8em;
 }
 
 .animated {
@@ -57,11 +63,12 @@ font-size: 1.8em;
     width: 100%;
 }
 
-
 .navigation a {
     text-decoration: none;
     text-transform: uppercase;
     color: #000;
+    display: block;
+    padding-top: 2.8em;
 }
 
 .project {
@@ -78,16 +85,20 @@ font-size: 1.8em;
     text-align: center;
     text-transform: uppercase;
     padding-bottom: 2em;
-    padding-top: 70px;
    
 
 }
 
 .text-project {
     text-align: center;
-    width: 65%;
+    width: 100%;
     margin: 0 auto;
     padding-bottom: 50px;
+}
+
+.text-project span {
+    display: block;
+    width: 100%;
 }
 
 .arrow {
